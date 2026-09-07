@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Congresso Medicale 2025</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Libreria per i Grafici (Chart.js) via CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Dashboard Analytics - Congresso Medicale 2025</h1>
+    </header>
+
+    <main class="container">
+        <!-- Sezione Filtri -->
+        <section class="card filters">
+            <h3>Filtri Generali</h3>
+            <div class="filter-group">
+                <label>Stakeholder:</label>
+                <select id="filter-stakeholder">
+                    <option value="">Tutti</option>
+                </select>
+
+                <label>Regione:</label>
+                <select id="filter-region">
+                    <option value="">Tutte</option>
+                </select>
+
+                <label>Canale:</label>
+                <select id="filter-channel">
+                    <option value="">Tutti</option>
+                </select>
+
+                <button id="btn-apply">Applica Filtri</button>
+            </div>
+        </section>
+
+        <!-- Sezione Grafici -->
+        <section class="grid-2">
+            <div class="card">
+                <h3>Funnel di Conversione</h3>
+                <canvas id="chart-funnel"></canvas>
+            </div>
+            <div class="card">
+                <h3>Affluenza Giornaliera Stand</h3>
+                <canvas id="chart-trends"></canvas>
+            </div>
+        </section>
+
+        <!-- Sezione Tabella Partecipanti -->
+        <section class="card">
+            <h3>Lista Partecipanti</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nome Completo</th>
+                        <th>Email</th>
+                        <th>Stakeholder</th>
+                        <th>Regione</th>
+                        <th>Canale</th>
+                    </tr>
+                </thead>
+                <tbody id="table-participants">
+                    <!-- Inserito via JS -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
