@@ -90,8 +90,9 @@ cd EventoCongresso2025
 
 *(In alternativa, esegui la classe `CongressoBackendApplication.java` dal tuo IDE)*.
 3. **Accedi all'applicazione:**
-* **Dashboard Web:** Apri il browser all'indirizzo `http://localhost:8000`
-* **Console DB H2:** Apri `http://localhost:8000/h2-console`
+- **Dashboard Web:** Apri il file `congresso-frontend/index.html` nel browser
+- **Backend API:** `http://localhost:8000`
+- **Console DB H2:** `http://localhost:8000/h2-console`
 * *JDBC URL:* `jdbc:h2:file:./data/congresso_db`
 * *Username:* `sa`
 * *Password:* *(vuota)*
